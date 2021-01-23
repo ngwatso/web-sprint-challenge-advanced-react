@@ -28,7 +28,6 @@ function App() {
 		setCart(cart.filter((p) => p.id !== plant.id));
 	};
 
-	console.log("test");
 	return (
 		<div>
 			<Router>
