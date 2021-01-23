@@ -35,6 +35,7 @@ const useForm = (initialValue) => {
 	// 	e.preventDefault();
 	// 	setShowSuccessMessage(true);
 	// };
+	return [values, handleChanges];
 };
 
 export default useForm;
