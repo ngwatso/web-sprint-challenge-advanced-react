@@ -1,4 +1,4 @@
-import { useState, Component } from "react";
+import { useState } from "react";
 
 // TODO write your custom hook here to control your checkout form
 
