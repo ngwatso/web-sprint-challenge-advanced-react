@@ -6,13 +6,8 @@ import { useState } from "react";
 
 const useLocalStorage = (key, initialValue) => {
 	const [storedValue, setStoredValue] = useState(() => {
-		// if (localStorage.getItem(key)) {
 		const item = window.localStorage.getItem(key);
-		// return JSON.parse(loacalStorage.getItem(key));
 		return item ? JSON.parse(item) : initialValue;
-
-		// localStorage.setItem(key, initialValue);
-		// return initialValue;
 	});
 
 	const setValue = (value) => {
@@ -31,10 +26,6 @@ const useForm = (initialValue) => {
 		setValues({ ...values, [e.target.name]: e.target.value });
 	};
 
-	// const handleSubmit = (e) => {
-	// 	e.preventDefault();
-	// 	setShowSuccessMessage(true);
-	// };
 	return [values, handleChanges];
 };
 
